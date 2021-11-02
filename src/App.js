@@ -23,9 +23,12 @@ function App() {
     }
   `
 
-  request('https://thetadata.io/graphql/', query).then((data=>{
+
+
+  React.useEffect(()=>{
+    request('https://thetadata.io/graphql/', query).then((data=>{
     setData(data)
-  })).catch((e)=>{console.log(e)})
+  })).catch((e)=>{console.log(e)})},[])
 
   // function changeVal(val){
   //   console.log(val,"-----changeVal------")
