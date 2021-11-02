@@ -1,11 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-// import JSONViewer from 'react-json-viewer';
-// import JsonEdit from 'react-jsoneditor'
 import ReactJson from 'react-json-view'
-
-// import "Re"
 import { request, gql } from 'graphql-request'
 
 function App() {
@@ -31,7 +27,6 @@ function App() {
       }
     }
   `
-
 
   React.useEffect(()=>{
     request('https://thetadata.io/graphql/', query).then((data=>{
