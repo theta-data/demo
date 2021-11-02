@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Data From Server:</h1>
+      <h3>Data From Server:</h3>
       <ReactJson name={false} src={{data}} theme={'monokai'} iconStyle={'square'} />
     </div>
   );

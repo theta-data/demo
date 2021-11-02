@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9126a0cc-897a-4dcd-9117-a23e139623e0" name="Changes" comment="debug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +35,7 @@
       <updated>1635844603407</updated>
       <workItem from="1635844605330" duration="29000" />
       <workItem from="1635844644284" duration="109000" />
-      <workItem from="1635844766048" duration="4381000" />
+      <workItem from="1635844766048" duration="4695000" />
     </task>
     <task id="LOCAL-00001" summary="debug">
       <created>1635847027333</created>
@@ -74,17 +71,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="debug" />
     <option name="LAST_COMMIT_MESSAGE" value="debug" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/index.js</url>
-          <line>2</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
