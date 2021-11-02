@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import JSONViewer from 'react-json-viewer';
+// import JSONViewer from 'react-json-viewer';
 // import JsonEdit from 'react-jsoneditor'
+import ReactJson from 'react-json-view'
 
 // import "Re"
 import { request, gql } from 'graphql-request'
@@ -35,19 +36,13 @@ function App() {
   React.useEffect(()=>{
     request('https://thetadata.io/graphql/', query).then((data=>{
     setData(data)
+      console.log('data', data)
   })).catch((e)=>{console.log(e)})},[])
-
-  // function changeVal(val){
-  //   console.log(val,"-----changeVal------")
-  // }
 
   return (
     <div className="App">
-      <b>Get Json:</b>
-      <JSONViewer
-          json={{data}}
-      />
-      {/*<JsonEdit json={{data}} changeVal={changeVal} />*/}
+      <h1>Data From Server:</h1>
+      <ReactJson name={false} src={{data}} theme={'monokai'} iconStyle={'square'} />
     </div>
   );
 }
