@@ -15,14 +15,21 @@ function App() {
         GetStatus {
           current_height
           address
-          chain_id
-          latest_finalized_block_hash
-          latest_finalized_block_height
+          genesis_block_hash
+        }
+      }
+      StakeStatistics {
+        theta_stake_ratio
+        total_validator_node_number
+      }
+      SmartContractStatistics {
+        call_rank(rank_by: last_24h_call_times) {
+          last_24h_call_times
+          contract_address
         }
       }
     }
   `
-
 
 
   React.useEffect(()=>{
